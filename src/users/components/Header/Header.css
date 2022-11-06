@@ -1,0 +1,160 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #038591;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 10px;
+}
+
+.icon_Sopping_box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shoppe_icon_box,
+.mark_icon_box {
+  position: relative;
+}
+
+.shoppe_icon_box:hover .shop_icon {
+  transform: translateY(-3px);
+}
+
+.mark_icon_box:hover .mark_icon {
+  transform: translateY(-3px);
+}
+
+.shop_icon {
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.3s;
+}
+
+.mark_icon {
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.pro_icon {
+  width: 50px;
+  height: auto;
+  margin-left: 40px;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.badge_pro {
+  right: -5px;
+  bottom: -5px;
+}
+.badge_shope,
+.badge_mark {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+  border-radius: 20%;
+  background-color: tomato;
+  font-size: 15px;
+  color: #fff;
+}
+
+.badge_mark {
+  right: -5px;
+  bottom: -5px;
+}
+.firt-left {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.img-logo {
+  height: 50px;
+  width: auto;
+}
+.text-s{
+  margin-left:20px;
+}
+.fist-text {
+  text-decoration: none;
+  margin: 0 3px;
+  padding: 5px 12px;
+  background-color: #ffaa00;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.fist-text:hover {
+  color: #000
+
+}
+.search_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+    opacity: 0;
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.8, 0.66, 0.66) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.tada {
+  animation-name: tada;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 660px) {
+  .search_header {
+    display: none;
+  }
+}
